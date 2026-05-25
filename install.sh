@@ -1,13 +1,13 @@
 #!/bin/bash
 #
 # GITFETCHZIP Installer
-# Usage: curl -fsSL https://raw.githubusercontent.com/kstost/gitfetchzip/refs/heads/main/install.sh | bash
+# Usage: curl -fsSL https://raw.githubusercontent.com/kstost/gitfetchzip/main/install.sh | bash
 #
 
 set -e
 
 BINARY_NAME="gitfetchzip"
-BASE_URL="https://raw.githubusercontent.com/kstost/gitfetchzip/refs/heads/main/dist_beta"
+BASE_URL="https://raw.githubusercontent.com/kstost/gitfetchzip/main/dist_beta"
 
 # Colors
 RED='\033[0;31m'

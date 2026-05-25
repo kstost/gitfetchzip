@@ -1,12 +1,12 @@
 #
 # GITFETCHZIP Installer for Windows
-# Usage: irm https://raw.githubusercontent.com/kstost/gitfetchzip/refs/heads/main/install.ps1 | iex
+# Usage: irm https://raw.githubusercontent.com/kstost/gitfetchzip/main/install.ps1 | iex
 #
 
 $ErrorActionPreference = "Stop"
 
 $BINARY_NAME = "gitfetchzip"
-$BASE_URL = "https://raw.githubusercontent.com/kstost/gitfetchzip/refs/heads/main/dist_beta"
+$BASE_URL = "https://raw.githubusercontent.com/kstost/gitfetchzip/main/dist_beta"
 
 function Info($msg) { Write-Host "→ $msg" -ForegroundColor Blue }
 function Success($msg) { Write-Host "✓ $msg" -ForegroundColor Green }
@@ -77,4 +77,9 @@ function Main {
     }
 }
 
-try { Main } catch { }
+try {
+    Main
+} catch {
+    Write-Host $_ -ForegroundColor Red
+    exit 1
+}

@@ -46,3 +46,13 @@ Build outputs are written to `dist_beta/` with names such as
 - ZIP download and extraction
 - Top-level archive directory removal
 - Linux, macOS, and Windows compatible Rust binary
+
+---
+
+## Disclaimer
+
+This software is provided **as is**, without warranty of any kind, express or implied. This includes, but is not limited to, warranties of merchantability, fitness for a particular purpose, and non-infringement.
+
+In no event shall the authors, copyright holders, or contributors be liable for any claim, damages, or other liability arising from the use of or inability to use this software. This includes, but is not limited to, data loss or corruption, system malfunction, security issues, financial loss, and direct, indirect, incidental, special, punitive, or consequential damages.
+
+Use of this software is entirely at your own risk and responsibility.
