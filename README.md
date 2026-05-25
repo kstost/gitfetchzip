@@ -2,6 +2,38 @@
 
 Download a GitHub repository snapshot at a specific commit and extract it into a target directory without running `git clone`.
 
+## Install
+
+### macOS / Linux
+
+Paste this into your terminal:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/kstost/gitfetchzip/main/install.sh | bash
+```
+
+- The installer automatically downloads the binary that matches your OS and CPU architecture.
+- It installs `gitfetchzip` into `/usr/local/bin` when possible, otherwise into `~/.local/bin`.
+- After installation, you can run `gitfetchzip` from anywhere.
+
+### Windows
+
+Open PowerShell and paste this command. Administrator permission is not required.
+
+```powershell
+irm https://raw.githubusercontent.com/kstost/gitfetchzip/main/install.ps1 | iex
+```
+
+- The installer downloads the matching Windows binary.
+- It installs into `%LOCALAPPDATA%\gitfetchzip\` and adds that directory to your user PATH.
+- After installation, close and reopen PowerShell if the `gitfetchzip` command is not found immediately.
+
+### Verify installation
+
+```bash
+gitfetchzip --help
+```
+
 ## Usage
 
 ```bash
