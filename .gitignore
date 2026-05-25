@@ -1,0 +1,7 @@
+/target
+/dist/
+/dist_beta/
+/builder/tools/
+
+__pycache__/
+*.pyc
